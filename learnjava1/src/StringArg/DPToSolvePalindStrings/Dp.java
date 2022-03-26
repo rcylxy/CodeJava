@@ -1,4 +1,4 @@
-package DPToSolvePalindStrings;
+package StringArg.DPToSolvePalindStrings;
 
 public class Dp {
     public static void printArray(boolean a[][]) {

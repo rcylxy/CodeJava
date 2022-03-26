@@ -1,4 +1,4 @@
-package ManacherA;
+package StringArg.ManacherA;
 
 public class Func {
     public String addIt(String s) {

@@ -1,4 +1,4 @@
-package CenterDiffusion;
+package StringArg.CenterDiffusion;
 
 public class CenterFunc {
     public static int max(int a, int b) {

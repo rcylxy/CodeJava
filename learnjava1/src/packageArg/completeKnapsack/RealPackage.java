@@ -1,9 +1,8 @@
-package completeKnapsack;
+package packageArg.completeKnapsack;
 
 import java.util.Scanner;
 
-public class CompleteA {
-
+public class RealPackage {
     private static final int MAXLINE = 35;
     private static final int MAXROW = 205;
 
@@ -25,11 +24,11 @@ public class CompleteA {
     public static int packagefunc(int[] w, int[] c, int m, int n) {
         int[] dp = new int[MAXROW];
         for (int i = 1; i <= n; ++i) {
-            for (int j = m; j >= 1; --j) {
-                for (int k = 0; k <= j / w[i]; ++k)
-                    if (j >= k * w[i])
-                        dp[j] = Math.max(dp[j], dp[j - k * w[i]] + k * c[i]);
-            }
+            for (int j = w[i]; j <= m; ++j) {
+                dp[j] = Math.max(dp[j], dp[j - w[i]] + c[i]);
+            }       //改成顺向就完事了！
+            printArray(dp, m);
+            System.out.println();
         }
         return dp[m];
     }
@@ -47,9 +46,10 @@ public class CompleteA {
             c[i] = in.nextInt();
         }
 
-        System.out.println("max=" + packagefunc(w, c, m, n));
+        System.out.println(packagefunc(w, c, m, n));
+
+
     }
 
+
 }
-
-
