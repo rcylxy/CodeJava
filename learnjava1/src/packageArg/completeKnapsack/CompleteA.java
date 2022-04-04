@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CompleteA {
 
-    private static final int MAXLINE = 35;
+    private static final int MAXLINE = 36;
     private static final int MAXROW = 205;
 
     public static void printArray(int[][] a, int m, int n) {
