@@ -1,4 +1,4 @@
-package StringArg.KMPAlgorithm;
+package StringArg.ManacherA.KMPAlgorithm;
 
 public class KMPDemo {
     public int[] getNext(String s) {
